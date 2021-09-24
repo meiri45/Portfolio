@@ -78,11 +78,12 @@ section .title {
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+    background:crimson;
 }
 
     .navbar.sticky {
         padding: 15px 0;
-        background: white;
+        background: crimson;
     }
 
     .navbar .max-width {
