@@ -82,7 +82,7 @@ section .title {
 
     .navbar.sticky {
         padding: 15px 0;
-        background: crimson;
+        background: white;
     }
 
     .navbar .max-width {
