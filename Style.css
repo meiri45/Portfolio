@@ -25,7 +25,7 @@ section {
     margin: auto;
 }
 
-.about, .skills,, .contact, footer {
+.about, .skills, .contact {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -78,7 +78,6 @@ section .title {
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
-    background:crimson;
 }
 
     .navbar.sticky {
@@ -290,7 +289,7 @@ section .title {
     position: relative;
 }
 
-    .skills .skills-content .right .line::before {
+    .skills .skills-content .right .line::after {
         content: "";
         position: absolute;
         height: 100%;
@@ -299,25 +298,23 @@ section .title {
         background: crimson;
     }
 
-.skills-content .right .html::before {
+.skills-content .right .html::after {
     width: 50%;
 }
 
-.skills-content .right .css::before {
+.skills-content .right .css::after {
     width: 50%;
 }
 
-.skills-content .right .js::before {
+.skills-content .right .js::after {
     width: 10%;
 }
 
-.skills-content .right .dart::before {
+.skills-content .right .dart::after {
     width: 60%;
 }
 
-.skills-content .right .mysql::before {
-    width: 70%;
-}
+
 
 
 /* contact section styling */
@@ -329,11 +326,7 @@ section .title {
     width: calc(50% - 30px);
 }
 
-.contact .contact-content .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
+
 
 .contact .contact-content .left p {
     text-align: justify;
@@ -364,6 +357,11 @@ section .title {
 
 .contact .contact-content .info .sub-title {
     color: #333;
+}
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .contact .right form .fields {
@@ -401,7 +399,7 @@ section .title {
 
     .contact .right form .field input:focus,
     .contact .right form .textarea textarea:focus {
-        border-color: #b3b3b3;
+        border-color: crimson;
     }
 
 .contact .right form .textarea textarea {
@@ -471,9 +469,7 @@ section .title {
         transition: all 0.3s ease;
     }
 
-        .navbar .menu.active {
-            left: 0;
-        }
+        
 
         .navbar .menu li {
             display: block;
@@ -493,10 +489,7 @@ section .title {
         font-size: 35px;
     }
 
-    .home .home-content a {
-        font-size: 23px;
-        padding: 10px 30px;
-    }
+    
 
     .max-width {
         max-width: 930px;
@@ -514,11 +507,6 @@ section .title {
 
     .about .about-content .right {
         flex: 100%;
-    }
-
-    .services .serv-content .card {
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
     }
 
     .skills .skills-content .column,
@@ -541,14 +529,6 @@ section .title {
         font-size: 32px;
     }
 
-    .home .home-content a {
-        font-size: 20px;
-    }
-
-    .services .serv-content .card {
-        width: 100%;
-    }
-}
 
 @media (max-width: 500px) {
     .home .home-content .text-2 {
@@ -577,12 +557,5 @@ section .title {
         width: 150px;
     }
 
-    .scroll-up-btn {
-        right: 15px;
-        bottom: 15px;
-        height: 38px;
-        width: 35px;
-        font-size: 23px;
-        line-height: 38px;
-    }
+   
 }
