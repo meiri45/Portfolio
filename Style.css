@@ -14,6 +14,7 @@ html {
 
 
 
+
 /* all similar content styling codes */
 section {
     padding: 100px 0;
@@ -150,65 +151,65 @@ section .title {
             margin-right: 0;
         }
 
-    .home .home-content .text-1 {
+.home-content .text-1 {
         font-size: 27px;
     }
 
-    .home .home-content .text-2 {
+.home-content .text-2 {
         font-size: 75px;
         font-weight: 600;
         margin-left: -3px;
     }
 
-    .home .home-content .text-3 {
+.home-content .text-3 {
         font-size: 40px;
         margin: 5px 0;
     }
 
-        .home .home-content .text-3 span {
+.home-content .text-3 span {
             color: crimson;
             font-weight: 500;
         }
 
-   
 
-      
+
+
 
 /* about section styling */
 .about .title::after {
     content: "who i am";
 }
 
-.about .about-content .left {
+.about-content .left {
     width: 45%;
 }
 
-    .about .about-content .left img {
+.about-content .left img {
         height: 400px;
         width: 400px;
         object-fit: cover;
         border-radius: 6px;
     }
 
-.about .about-content .right {
+.about-content .right {
     width: 55%;
 }
 
-    .about .about-content .right .text {
+ .about-content .right .text {
         font-size: 25px;
         font-weight: 600;
         margin-bottom: 10px;
     }
 
-        .about .about-content .right .text span {
+.about-content .right .text span {
             color: crimson;
         }
 
-    .about .about-content .right p {
+ .about-content .right p {
         text-align: justify;
     }
 
-    .about .about-content .right a {
+    .download {
         display: inline-block;
         background: crimson;
         color: #fff;
@@ -221,12 +222,12 @@ section .title {
         transition: all 0.3s ease;
     }
 
-        .about .about-content .right a:hover {
+        .download:hover {
             color: crimson;
             background: none;
         }
 
-  }
+
 
 /* skills section styling */
 
@@ -234,21 +235,21 @@ section .title {
     content: "what i know";
 }
 
-.skills .skills-content .column {
+.skills-content .column {
     width: calc(50% - 30px);
 }
 
-.skills .skills-content .left .text {
+.skills-content .left .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.skills .skills-content .left p {
+ .skills-content .left p {
     text-align: justify;
 }
 
-.skills .skills-content .left a {
+  .button {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -261,35 +262,35 @@ section .title {
     transition: all 0.3s ease;
 }
 
-    .skills .skills-content .left a:hover {
+  .button:hover {
         color: crimson;
         background: none;
     }
 
-.skills .skills-content .right .bars {
+.skills-content .right .bars {
     margin-bottom: 15px;
 }
 
-.skills .skills-content .right .info {
+.skills-content .right .info {
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
 
-.skills .skills-content .right span {
+.skills-content .right span {
     font-weight: 500;
     font-size: 18px;
 }
 
-.skills .skills-content .right .line {
+.skills-content .right .line {
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
 
-    .skills .skills-content .right .line::after {
+  .skills-content .right .line::after {
         content: "";
         position: absolute;
         height: 100%;
@@ -314,6 +315,11 @@ section .title {
     width: 60%;
 }
 
+.skills .showMore .moreText
+{
+    display: inline;
+}
+
 
 
 
@@ -322,43 +328,43 @@ section .title {
     content: "get in touch";
 }
 
-.contact .contact-content .column {
+.contact-content .column {
     width: calc(50% - 30px);
 }
 
 
 
-.contact .contact-content .left p {
+.contact-content .left p {
     text-align: justify;
 }
 
-.contact .contact-content .left .icons {
+.contact-content .left .icons {
     margin: 10px 0;
 }
 
-.contact .contact-content .row {
+.contact-content .row {
     display: flex;
     height: 65px;
     align-items: center;
 }
 
-    .contact .contact-content .row .info {
+.contact-content .row .info {
         margin-left: 30px;
     }
 
-    .contact .contact-content .row i {
+.contact-content .row i {
         font-size: 25px;
         color: crimson;
     }
 
-.contact .contact-content .info .head {
+.contact-content .info .head {
     font-weight: 500;
 }
 
-.contact .contact-content .info .sub-title {
+.contact-content .info .sub-title {
     color: #333;
 }
-.contact .contact-content .text {
+.contact-content .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -368,7 +374,7 @@ section .title {
     display: flex;
 }
 
-    .contact .right form .field
+.contact .right form .field
      {
         height: 45px;
         width: 100%;
@@ -433,6 +439,7 @@ section .title {
         background: none;
     }
 
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img {
@@ -469,7 +476,7 @@ section .title {
         transition: all 0.3s ease;
     }
 
-        
+
 
         .navbar .menu li {
             display: block;
@@ -489,7 +496,7 @@ section .title {
         font-size: 35px;
     }
 
-    
+
 
     .max-width {
         max-width: 930px;
@@ -557,5 +564,5 @@ section .title {
         width: 150px;
     }
 
-   
+
 }
